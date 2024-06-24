@@ -121,7 +121,6 @@ function reset_func()
             credit_func();
         }
     }
-    
 }
 function color_func(abcd)
 {
@@ -134,5 +133,3 @@ function exit_func()
 {
     history.back();
 }
-
-

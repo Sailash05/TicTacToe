@@ -5,7 +5,6 @@ var des = document.querySelector('.des');
 var customization = document.querySelector('.customization');
 var check = true;
 var temporary = 1;
-
 c_box.style.display = "none";
 function credit_func()
 {
@@ -68,13 +67,10 @@ function change_func()
     color_func(col.value);
     customization_func();
 } 
-
-
 var reset_btn = document.querySelector('.reset_btn');
 var custom = document.querySelector('.custom');
 var credit = document.querySelector('.credit');
 var exit_btn = document.querySelector('.exit_btn');
-
 function display_func()
 {
     if(check)
