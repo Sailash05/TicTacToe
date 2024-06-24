@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: url("https://wallpapercave.com/wp/wp8984777.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_play{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.player{
+    color: red;
+    background-color: greenyellow;
+    border-color: orange;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 30px;
+    width: 430px;
+    text-align: center;
+}
+.des{
+    color: rgb(144, 255, 248);
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(255, 50, 211);
+    width: 430px;
+}
+.board{
+    display: flex;
+    height: 440px;
+    width: 440px;
+    background-color: black;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 5px 0 5px 0;
+}
+.ans{
+    background-color: rgb(29, 235, 77);
+    height: 135px;
+    width: 135px;
+    margin: 1px;
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    height: fit-content;
+    background-color: rgb(255, 125, 125);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ttt{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 125, 125);
+    text-align: center;
+    /*padding-left: 48%;*/
+    display: none;
+}
+.menu_line{
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.menu:hover{
+    background-color: rgb(255, 91, 91);
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+.reset_btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(255, 125, 125);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.reset_btn:hover{
+    background-color: rgb(255, 91, 91);
+}
+.exit_btn{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(255, 125, 125);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.exit_btn:hover{
+    background-color: rgb(255, 91, 91);
+}
+.custom{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(255, 125, 125);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.custom:hover{
+    background-color: rgb(255, 91, 91);
+}
+.credit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(255, 125, 125);
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.credit:hover{
+    background-color: rgb(255, 91, 91);
+}
+.credit_box{
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 480px;
+    position: absolute;
+    top: 240px;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 20px;
+    display:none;
+}
+.credit_box_nav{
+    background-color: rgb(255, 125, 125);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: solid 3px rgb(0, 0, 0);
+}
+.credit_box_nav_head{
+    color: white;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline;
+    margin-left: 20px;
+    text-decoration:underline;
+}
+.credit_box_nav_btn{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    display: inline;
+    margin-left: 327.5px;
+    background-color: rgb(121, 255, 150);
+    padding: 0px 10px 0px 10px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+.credit_box_nav_btn:hover{
+    color: rgb(10, 39, 255);
+    background-color: rgb(0, 255, 55);
+}
+.credit_box_nav_btn:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 55);
+}
+.icon{
+    margin-top: 30px;
+    margin-left: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bgcredit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 13px;
+    margin-top: 25px;
+}
+.responsive_custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.customization{
+    height: 550px;
+    width: 550px;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 110px;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 20px;
+    display:none;
+    z-index: 0;
+}
+.customization_nav{
+    height: fit-content;
+    background-color: rgb(255, 125, 125);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: solid 3px rgb(0, 0, 0);
+}
+.customization_nav_head{
+    color: white;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    text-decoration:underline;
+}
+.customization_nav_btn{
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 311.3px;
+    background-color: rgb(121, 255, 150);
+    padding: 0px 10px 0px 10px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+.customization_nav_btn:hover{
+    color: rgb(10, 39, 255);
+    background-color: rgb(0, 255, 55);
+}
+.customization_nav_btn:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 55);
+}
+.opt_head{
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+select{
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(255, 125, 125);
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+select option{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+.preview_head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.preview{
+    display: flex;
+    height: 275px;
+    width: 275px;
+    background-color: black;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    margin-left: 135px;
+    margin-top: 10px;
+}
+.small_block{
+    background-color: rgb(29, 235, 77);
+    height: 85px;
+    width: 85px;
+    margin: 1px;
+}
+.cancel_btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    background-color: rgb(255, 125, 125);
+    padding: 3px 15px 3px 15px;
+    border-radius: 13px;
+    letter-spacing: 2px;
+    margin-left: 290px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.apply_btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    background-color: rgb(255, 125, 125);
+    padding: 3px 15px 3px 15px;
+    border-radius: 13px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cancel_btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+.apply_btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+@media screen and (max-width: 700px) {
+    body{
+        background-repeat: repeat-y;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .ttt{
+        align-self: flex-start;
+    }
+    .btn{
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        top: 35px;
+        width: 100%;
+        z-index: 1;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: -40px;
+    }
+    .reset_btn{
+        display: none;
+    }
+    .credit{
+        display: none;
+    }
+    .custom{
+        display: none;
+    }
+    .exit_btn{
+        display: none;
+    }
+    .player{
+        font-size: 25px;
+        width: 300px;
+    }
+    .board{
+        width: 340px;
+        height: 340px;
+    }
+    .ans{
+        height: 105px;
+        width: 105px;
+    }
+    .des{
+        font-size: 25px;
+        width: 300px;
+    }
+    .customization{
+        width: fit-content;
+        height: fit-content;
+        padding-bottom: 25px;
+        padding-right: 15px;
+    }
+    .customization_nav{
+        width: 100%;
+    }
+    .customization_nav_head{
+        font-size: 25px;
+    }
+    .customization_nav_btn{
+        margin: 0px;
+        font-size: 21px;
+        position: absolute;
+        right: 0%;
+    }
+    .opt_head{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    select{
+        height: 30px;
+        width: 110px;
+        font-size: 20px;
+    }
+    option{
+        font-size: 20px;
+    }
+    .preview{
+        margin-left: 0px;
+        height: 3000px;
+        width: 300px;
+    }
+    .small_block{
+        height: 90px;
+        width: 90px;
+    }
+    .cancel_btn{
+        margin-left: 35%;
+        font-size: 20px;
+    }
+    .apply_btn{
+        font-size: 20px;
+    }
+    .opt_head{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    select{
+        height: 30px;
+        width: 110px;
+        font-size: 20px;
+    }
+    option{
+        font-size: 20px;
+    }
+    .preview{
+        margin-left: 20px;
+        height: 300px;
+        width: 300px;
+    }
+    .small_block{
+        height: 90px;
+        width: 90px;
+    }
+    .cancel_btn{
+        margin-left: 35%;
+        font-size: 20px;
+    }
+    .apply_btn{
+        font-size: 20px;
+    }
+    .opt_head{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    select{
+        height: 30px;
+        width: 110px;
+        font-size: 20px;
+    }
+    option{
+        font-size: 20px;
+    }
+    .preview{
+        margin-left: 20px;
+        height: 300px;
+        width: 300px;
+    }
+    .small_block{
+        height: 90px;
+        width: 90px;
+    }
+    .cancel_btn{
+        margin-left: 35%;
+        font-size: 20px;
+    }
+    .apply_btn{
+        font-size: 20px;
+    }
+    .credit_box{
+        width: 90vw;
+        height: 40vh;
+    }
+    .credit_box_nav_head{
+        font-size: 25px;
+    }
+    .credit_box_nav_btn{
+        font-size: 18.5px;
+        position: absolute;
+        margin: 0;
+        right: 0%;
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .bgcredit{
+        font-size: 30px;
+    }
+}

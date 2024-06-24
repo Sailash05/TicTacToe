@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+ES:wght@100..400&family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1 class="ttt">Tic Tac Toe</h1>
+        <div class="btn">
+            <p class="reset_btn new_class" onclick="reset_func()">Reset</p>
+            <p class="custom" onclick="customization_func()">Customization</p>
+            <p class="credit" onclick="credit_func()">Credits</p>
+            <p class="exit_btn" onclick="exit_func()">Exit</p>
+            <div class="menu" onclick="display_func()">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="main_play">
+        <p class="player">Player : X</p>
+        <div class="board">
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+            <div class="ans" onclick="input_func(event)"></div>
+        </div>
+        <p class="des"></p>
+    </div>
+    <div class="responsive_custom">
+        <div class="customization">
+            <nav class="customization_nav">
+                <h1 class="customization_nav_head">Customization</h1>
+                <h1 class="customization_nav_btn" onclick="customization_func()">X</h1>
+            </nav>
+            <h1 class="opt_head">Choose Board Color : </h1>
+            <select onclick="preview_func()" class="color_select">
+                <option value="rgb(29, 235, 77)">Green</option>
+                <option value="rgb(109, 109, 255)">Blue</option>
+                <option value="rgb(255, 91, 91)">Red</option>
+                <option value="pink">Pink</option>
+                <option value="rgb(255, 192, 43)">Orange</option>
+            </select>
+            <h1 class="preview_head">Preview</h1>
+            <div class="preview">
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+                <div class="small_block"></div>
+            </div>
+            <h1 class="cancel_btn" onclick="customization_func()">Cancel</h1>
+            <h1 class="apply_btn" onclick="change_func()">Apply</h1>
+        </div>
+        <div class="credit_box">
+            <nav class="credit_box_nav">
+                <h1 class="credit_box_nav_head">Credits</h1>
+                <h1 class="credit_box_nav_btn" onclick="credit_func()">X</h1>
+            </nav>
+            <h1 class="icon">Icons : <a href="https://www.flaticon.com/free-icons/tic-tac-toe" title="tic tac toe icons" target="_blank">Tic tac toe icons created by Freepik - Flaticon</a></h1>
+            <h1 class="bgcredit">Background : <a href="https://wallpapercave.com/" target="_blank">wallpapercave.com</a></h1>
+        </div>
+    </div>
+    <script src="tic_tac_toe.js"></script>
+    <script src="user_interface.js"></script>
+</body>
+</html>
