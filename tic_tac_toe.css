@@ -500,3 +500,23 @@ select option{
         font-size: 30px;
     }
 }
+@media screen and (min-width: 701px){
+    .reset_btn{
+        display: block;
+    }
+    .credit{
+        display: block;
+    }
+    .custom{
+        display: block;
+    }
+    .exit_btn{
+        display: block;
+    }
+    .customization{
+        display: none;
+    }
+    .credit_box{
+        display: none;
+    }
+}
